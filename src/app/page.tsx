@@ -161,7 +161,7 @@ export default function ModelCompare() {
                         <td className="py-3 px-2 font-medium">组织</td>
                         {compareList.map((model) => (
                           <td key={model.model_id} className="py-3 px-2">
-                            {model.organization}
+                            {model.organization || '-'}
                           </td>
                         ))}
                       </tr>
@@ -169,7 +169,9 @@ export default function ModelCompare() {
                         <td className="py-3 px-2 font-medium">上下文长度</td>
                         {compareList.map((model) => (
                           <td key={model.model_id} className="py-3 px-2">
-                            {model.context.toLocaleString()}
+                            {model.context
+                              ? model.context.toLocaleString()
+                              : '-'}
                           </td>
                         ))}
                       </tr>
@@ -185,7 +187,9 @@ export default function ModelCompare() {
                         <td className="py-3 px-2 font-medium">输入价格</td>
                         {compareList.map((model) => (
                           <td key={model.model_id} className="py-3 px-2">
-                            ${parseFloat(model.input_price).toFixed(2)}
+                            {model.input_price
+                              ? `$${parseFloat(model.input_price).toFixed(2)}`
+                              : '-'}
                           </td>
                         ))}
                       </tr>
@@ -193,7 +197,9 @@ export default function ModelCompare() {
                         <td className="py-3 px-2 font-medium">输出价格</td>
                         {compareList.map((model) => (
                           <td key={model.model_id} className="py-3 px-2">
-                            ${parseFloat(model.output_price).toFixed(2)}
+                            {model.output_price
+                              ? `$${parseFloat(model.output_price).toFixed(2)}`
+                              : '-'}
                           </td>
                         ))}
                       </tr>
@@ -235,7 +241,7 @@ export default function ModelCompare() {
                         <td className="py-3 px-2 font-medium">发布日期</td>
                         {compareList.map((model) => (
                           <td key={model.model_id} className="py-3 px-2">
-                            {model.release_date}
+                            {model.release_date || '-'}
                           </td>
                         ))}
                       </tr>
