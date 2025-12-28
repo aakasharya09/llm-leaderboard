@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LLM 模型对比排行榜
 
-## Getting Started
+一个基于 Next.js 的大语言模型对比排行榜工具，帮助用户快速比较不同 LLM 模型的性能指标、价格和规格。
 
-First, run the development server:
+## 功能特性
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 模型搜索
+- 支持按模型名称或组织进行搜索
+- 实时过滤模型列表
+- 支持多关键词搜索
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 模型对比
+- 支持选择多个模型进行对比
+- 直观的对比列表管理
+- 一键添加或移除模型
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 详细对比信息
+对比表格包含以下信息：
+- **基本信息**：模型名称、组织
+- **规格参数**：上下文长度、多模态支持
+- **价格信息**：输入价格、输出价格（美元/百万 tokens）
+- **性能指标**：
+  - GPQA 分数（研究生级问答）
+  - SWE Bench 分数（软件工程基准测试）
+  - MMMU 分数（多学科大学水平理解）
+- **发布信息**：发布日期
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 数据来源
+所有模型数据来自 [ZeroEval API](https://api.zeroeval.com/leaderboard/models/full)，定期更新以确保信息的准确性和时效性。
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 技术特点
+- 基于 Next.js 16 和 React 19 构建
+- 使用 Tailwind CSS 实现响应式设计
+- TypeScript 类型安全
+- 简洁的黑白配色设计

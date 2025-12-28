@@ -1,7 +1,13 @@
 {
   "name": "@yc-w-cn/llm-leaderboard",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "LLM模型对比排行榜 - 帮助用户快速比较不同大语言模型的性能指标、价格和规格",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yc-w-cn/llm-leaderboard"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
