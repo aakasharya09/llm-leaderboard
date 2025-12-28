@@ -2,15 +2,7 @@
 
 import { useMemo, useState } from 'react';
 
-import {
-  ChevronDown,
-  ChevronRight,
-  ChevronUp,
-  Info,
-  Plus,
-  Search,
-  X,
-} from 'lucide-react';
+import { ChevronDown, ChevronUp, Info, Plus, Search, X } from 'lucide-react';
 
 import {
   Dialog,
