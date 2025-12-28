@@ -52,7 +52,7 @@ export function applyPreset(allModels: Model[], presetId: string): Model[] {
   const presetModels: Model[] = [];
   for (const modelName of preset.models) {
     const model = allModels.find((m) => m.name === modelName);
-    if (model && presetModels.length < 5) {
+    if (model) {
       presetModels.push(model);
     }
   }
