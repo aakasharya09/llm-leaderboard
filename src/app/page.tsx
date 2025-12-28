@@ -18,6 +18,7 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import modelsData from '@/data/full.json';
+import { applyPreset, MODEL_PRESETS } from '@/data/presets';
 import type { Model } from '@/types/model';
 
 export default function ModelCompare() {
@@ -88,6 +89,30 @@ export default function ModelCompare() {
         </header>
 
         <div className="flex flex-col gap-12">
+          <div className="border-t-2 border-black pt-6">
+            <h2 className="text-2xl font-semibold mb-6">预设模型组</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {MODEL_PRESETS.map((preset) => (
+                <button
+                  key={preset.id}
+                  onClick={() => {
+                    const presetModels = applyPreset(modelsData, preset.id);
+                    setCompareList(presetModels);
+                  }}
+                  className="p-6 border-2 border-zinc-300 hover:border-black hover:bg-zinc-50 transition-all text-left"
+                >
+                  <h3 className="font-semibold text-lg mb-2">{preset.name}</h3>
+                  <p className="text-sm text-zinc-600 mb-3">
+                    {preset.description}
+                  </p>
+                  <p className="text-xs text-zinc-500">
+                    {preset.models.length} 个模型
+                  </p>
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="border-t-2 border-black pt-6 flex flex-col">
               <h2 className="text-2xl font-semibold mb-6">选择模型</h2>
