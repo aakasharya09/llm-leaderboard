@@ -96,12 +96,7 @@ export default function ModelCompare() {
             </div>
 
             <div className="border-t-2 border-black pt-6 flex flex-col">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-semibold">对比列表</h2>
-                <span className="text-sm text-zinc-600">
-                  {compareList.length}/5
-                </span>
-              </div>
+              <h2 className="text-2xl font-semibold mb-6">对比列表</h2>
 
               {compareList.length === 0 ? (
                 <div className="p-12 border-2 border-dashed border-zinc-300 text-center flex-1 flex items-center justify-center">
