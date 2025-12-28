@@ -149,8 +149,7 @@ export default function ModelCompare() {
                       onClick={() => {
                         addToCompare(model);
                       }}
-                      disabled={compareList.length >= 5}
-                      className="p-2 hover:bg-black hover:text-white transition-colors disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-black"
+                      className="p-2 hover:bg-black hover:text-white transition-colors"
                     >
                       <Plus className="w-5 h-5" />
                     </button>
