@@ -178,7 +178,13 @@ export default function ModelCompare() {
                   key={preset.id}
                   onClick={() => {
                     const presetModels = applyPreset(modelsData, preset.id);
-                    setCompareList(presetModels);
+                    const existingIds = new Set(
+                      compareList.map((m) => m.model_id),
+                    );
+                    const newModels = presetModels.filter(
+                      (m) => !existingIds.has(m.model_id),
+                    );
+                    setCompareList([...compareList, ...newModels]);
                   }}
                   className="p-6 border-2 border-zinc-300 hover:border-black hover:bg-zinc-50 transition-all text-left"
                 >
